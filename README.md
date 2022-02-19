@@ -1,3 +1,17 @@
+SOLUCION
+
+Se crea pagina de servicio autolimpio que incluye:
+
+pagina principal
+pagina presentacion compañia
+pagina de servicios "normales"
+Pagina de login Premiun
+Pagina escoge a tu chica
+pagina de login admin
+pagina de resumen de datos admin
+
+PROBLEMA
+
 autolimpio
 
 Una empresa de lavado de autos llamada AutoLimpio, requiere un sistema que permita la creación de Órdenes de Trabajo de los servicios que presta la empresa. Este documento considera:
