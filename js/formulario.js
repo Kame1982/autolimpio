@@ -6,7 +6,7 @@ document.getElementById("nombre").addEventListener("blur", (evento) => {
     // let o const - formas recomendadas de variables o constantes
     const feedbackNombre = document.getElementById("feedback-nombre");
 
-    if( txtNombre.length < 3 ) {        
+    if( 3 < txtNombre.length < 30 ) {        
         feedbackNombre.innerHTML = "Favor de ingresar mas caracteres.";
         input.classList.remove("is-valid");
         input.classList.add("is-invalid");
@@ -116,42 +116,4 @@ document.getElementById("ncasa").addEventListener("blur", (evento) => {
     }
 });
 
-document.getElementById("provincia").addEventListener("blur", (evento) => {
-    const input = evento.currentTarget;
-    const txtprovincia = input.value;
-    
-    // let o const - formas recomendadas de variables o constantes
-    const feedbackprovincia = document.getElementById("feedback-provincia");
 
-    if( txtprovincia.length < 3 ) {        
-        feedbackprovincia.innerHTML = "no recuerdo esa provincia";
-        input.classList.remove("is-valid");
-        input.classList.add("is-invalid");
-        feedbackprovincia.className = "invalid-feedback";
-    } else {        
-        feedbackprovincia.innerHTML = "Listo";
-        input.classList.remove("is-invalid");
-        input.classList.add("is-valid");
-        feedbackprovincia.className = "valid-feedback";
-    }
-});
-
-document.getElementById("zip").addEventListener("blur", (evento) => {
-    const input = evento.currentTarget;
-    const txtzip = input.value;
-    
-    // let o const - formas recomendadas de variables o constantes
-    const feedbackzip = document.getElementById("feedback-zip");
-
-    if(txtzip.length < 5 ) {        
-        feedbackzip.innerHTML = "Los Zip Code son de 5 numeros, por favor";
-        input.classList.remove("is-valid");
-        input.classList.add("is-invalid");
-        feedbackzip.className = "invalid-feedback";
-    } else {        
-        feedbackzip.innerHTML = "Listo";
-        input.classList.remove("is-invalid");
-        input.classList.add("is-valid");
-        feedbackzip.className = "valid-feedback";
-    }
-});
