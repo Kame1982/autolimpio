@@ -1,0 +1,236 @@
+<!-- fuente: https://themewagon.com/themes/elearning-free-bootstrap-5-css3-education-website-template/ -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>AutoLimpio</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+       
+</head>
+<body>
+
+    <header></header>
+
+    <!-- formulario inicio -->
+    
+    <div class="container-xxl py-5">
+      <h3 class="section-title bg-white text-start text-primary pe-3">CUPOS DISPONIBLES A CONTAR DEL 30 DE FEBRERO</h3>
+        <div class="container">
+            <div class="row g-5">
+              <div class="col-lg-6" style="max-height:300px;">
+                <h2 class="mb-4">SUCURSAL Y HORARIOS DISPONIBLES.</h2>
+                  <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="img/overol.webp" alt="Autolimpio" style="object-fit: cover;">
+                </div>
+                 <br>
+                  <label for="sucursal" class="form-label">Seleccione su sucursal mas cercana</label>
+                  <select class="form-select" id="sucursal" aria-describedby="valid-feedback">
+                    <option selected disabled value="">Selecciona una sucursal</option>
+                    <option>Temuco</option>
+                    <option>Concepcion</option>
+                    <option>Puerto Montt</option>
+                    <option>Santiago</option>
+                    <option>Iquique</option>
+                  </select>
+                  <label for="fecha">Fecha</label><input type="date" id="fecha" name="fecha" class="col-8 form-control" required="required" />
+                  <label>Horarios Disponibles</label><select class="form-control" id="hora">
+                    <option value="0" selected>Seleccione...
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+                <label for="validationServer04" class="form-label">Encargado del servicio</label>
+                    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback">
+                        <option selected disabled value="">Seleccione un encargado</option>
+                        <option>Encargado 1 - John Rambo</option>
+                        <option>Encargado 2 - John Wick</option>
+                        <option>Encargado 3 - John Travolta</option>
+                    </select>
+                </div>
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="container"> <!--contiene el formulario, sin el, formulario ocupa todo el ancho de la pagina-->
+        
+                        <div class="col-lg-12"> <!--define columa siguiente-->
+                        
+                           <h2 class="mb-4">RESERVA TU Y ESTARAS ACUMULANDO PUNTOS EN TU MENBRESIA PLATA/ORO/PLATINIUM.</h2>
+                           <form action="formulario.html" id="formulario-reserva" class="row g-3">
+                            <h3 class="text-primary text-uppercase mb-3 animated slideInDown">Datos Personales</h3>
+                             
+                             <div class="col-md-6">
+                               <label for="nombre" class="form-label">Nombre</label>
+                               <input type="text" class="form-control" id="nombre" placeholder="Jhon">
+                               <div id="feedback-nombre" class="valid-feedback">
+                               </div>
+                             </div>
+                                          
+                             <div class="col-md-6">
+                               <label for="apellido" class="form-label">Apellido</label>
+                               <input type="text" class="form-control" id="apellido" placeholder="Doe">
+                               <div id="feedback-apellido" class="valid-feedback">
+                               </div>
+                             </div>
+           
+                             <div class="col-md-6">
+                               <label for="rut" class="form-label">rut</label>
+                               <input type="number" class="form-control" id="rut" placeholder="12345678-9">
+                               <div id="feedback-rut" class="valid-feedback">
+                                 </div>
+                             </div>
+           
+                             <div class="col-md-3">
+                               <label for="dverificador" class="form-label">.</label>
+                               <input type="text" class="form-control" id="dverificador" placeholder="0123456789/k">
+                               <div id="feedback-dverificacion" class="valid-feedback">
+                               </div>
+                             </div>
+                           
+                             <div class="col-md-6">
+                                 <label for="email" class="form-label">Email</label>
+                                 <input type="email" class="form-control" id="email" placeholder="tucorreo@mail.com">
+                                 <div id="feedback-email" class="valid-feedback">
+                                  </div>
+                               </div>
+           
+                               <div class="col-md-6">
+                                 <label for="telefono" class="form-label">Teléfono</label>
+                                 <input type="number" class="form-control" id="telefono" placeholder="123456789">
+                                 <div id="feedback-telefono" class="valid-feedback">
+                                  
+                                 </div>
+                               </div>
+                               <div class="col-md-5">
+                                 <label for="direccion" class="form-label">Direccion De Facturacion</label>
+                                 <input type="text" class="form-control" id="direccion" placeholder="Calle Falsa">
+                                 <div id="feedback-direccion" class="valid-feedback">
+                                 </div>
+                               </div>
+           
+                               <div class="col-md-3">
+                                 <label for="ncasa" class="form-label">Numero</label>
+                                 <input type="number" class="form-control" id="ncasa" placeholder="123456">
+                                 <div id="feedback-ncasa" class="valid-feedback">
+                                 </div>
+                               </div>
+                               
+                               
+              <br><br> 
+              <!-- datos del vehiculo -->
+              
+              <div class= "container-xs py-5">      
+                <h3 class="text-primary text-uppercase mb-3 animated slideInDown">Datos de Vehiculos</h3>
+                                   
+                    <label for="tvehiculo" class="form-label">Tipo de Vehiculo</label>
+                    <select class="form-select" id="tvehiculo" aria-describedby="valid-feedback">
+                      <option selected disabled value="">Selecciona el modelo</option>
+                      <option>Furgon</option>
+                      <option>Automovil</option>
+                      <option>Camion</option>
+                      <option>Camioneta</option>
+                      <option>Moto</option>
+                    </select>
+                    <div class= "container-xs py-5">
+                               <div class="col-md-6">
+                                <p>Seleccione el servicio que desea contratar (Valores Netos)</p>
+                               <div class="form-check">
+                                   <input type="radio" class="form-check-input" id="lexterior" name="radio-stacked" required>
+                                   <label class="form-check-label" for="validationFormCheck2">Lavado exterior - $7000</label>
+                                 </div>
+                               </div>
+                               <div class="form-check">
+                                   <input type="radio" class="form-check-input" id="linterior" name="radio-stacked" required>
+                                   <label class="form-check-label" for="validationFormCheck2">Lavado de motor - $5000</label>
+                               </div>
+                               <div class="form-check mb-3">
+                                   <input type="radio" class="form-check-input" id="lambos" name="radio-stacked" required>
+                                   <label class="form-check-label" for="validationFormCheck3">Lavado exterior y de motor - $12000</label>
+                                   <div class="invalid-feedback">More example invalid feedback text</div>
+                                 </div>
+                              
+                               <div class="col-md-6">
+                                 <label for="marca" class="form-label">Indique la Marca</label>
+                                 <input type="text" class="form-control" id="marca" placeholder="Fiat - Lada - Mercedes">
+                                 <div id="feedback-marca" class="valid-feedback">
+                                  </div>
+                               </div>
+                               <div class="col-md-5">
+                                 <label for="modelo" class="form-label">Indique el Modelo</label>
+                                 <input type="text" class="form-control" id="modelo" placeholder="Palio - Sail - Focus">
+                                 <div id="feedback-modelo" class="valid-feedback">
+                                 </div>
+                               </div>
+           
+                               <div class="col-md-3">
+                                 <label for="ano" class="form-label">Año del Vehiculo</label>
+                                 <input type="number" class="form-control" id="ano" placeholder="1234">
+                                 <div id="feedback-ano" class="valid-feedback">
+                                 </div>
+                               </div>
+                               
+                                <label for="sucursal" class="form-label">Revision Tecnica al dia</label>
+               <select class="form-select" id="sucursal" aria-describedby="valid-feedback">
+                 <option selected disabled value="">Indique el estado:</option>
+                 <option>Si</option>
+                 <option>No</option>
+                  </select>
+              <br><br> 
+                                </div>
+                                <div class="col-12"> <!-- debio ocupar el ancho completo de la columna y no fue asi -->
+                                  <button class="btn btn-primary" type="submit">Reservar</button>
+                                </div>
+                               </form>
+                               
+                               </div>
+                           </div>
+                           
+                       </div>
+                      </div>   
+     </div>
+    </div>
+     <!-- formulario fin -->
+    
+    <footer></footer>   
+
+    <!-- JavaScript Libraries -->
+    <script src="js/script.js"></script>
+    <script src="js/formulario.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ 
+     <!-- Template Javascript -->
+     <script src="js/main.js"></script>
+</body>

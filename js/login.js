@@ -1,20 +1,29 @@
 document.getElementById("login-form").addEventListener("submit", (submitEvent) => {
     submitEvent.preventDefault();
 
-    const usuario       = document.getElementById("usuario").value;
-    const contrasena    = document.getElementById("contrasena").value;
+    const plata       = document.getElementById("usuario").value;
+    const oro         = document.getElementById("usuario").value;
+    const diamante    = document.getElementById("usuario").value;
+    const contrasena  = document.getElementById("contrasena").value;
 
-    if( usuario == 'anne@gmail.com' && contrasena == '1234') {
+    if( plata == 'silver' && contrasena == 'silvercoin') {
         accederAdministracion();
-    } else {
-        mostrarMensajeError();
     }
+        else if ( oro == 'gold' && contrasena == 'goldcoin') 
+        {
+            accederAdministracion();
+        }
+            else if ( diamante == 'diamond' && contrasena == 'diamondcoin') 
+            {
+                accederAdministracion();
+            }
+        else   {mostrarMensajeError();
+         }
 
-    return false;
-});
+   });
 
 function accederAdministracion() {
-    window.location = "private.html";
+    window.location = "miembros.html";
 }
 
 function mostrarMensajeError() {

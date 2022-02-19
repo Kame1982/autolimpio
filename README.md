@@ -1,14 +1,23 @@
 SOLUCION
 
-Se crea pagina de servicio autolimpio que incluye:
+Se crea pagina de servicio autolimpio (que incluye:)
 
 pagina principal
 pagina presentacion compañia
-pagina de servicios "normales"
-Pagina de login Premiun
-Pagina escoge a tu chica
+pagina de contacto
+pagina de reserva de horas
+
+Pagina de login miembros (usuarios validos 3)
+      nombre: silver  clave: silvercoin
+      nombre: gold    clave: goldcoin
+      nombre: diamond clave: diamondcoin
+
+pagin lod miembros
+
 pagina de login admin
-pagina de resumen de datos admin
+     nombre: admin   Clave: admin
+
+pagina log admin
 
 PROBLEMA
 
