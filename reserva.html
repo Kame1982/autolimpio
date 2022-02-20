@@ -70,6 +70,36 @@
                     <option value="20:00">20:00</option>
                     <option value="21:00">21:00</option>
                 </select>
+                <br>
+                <p>Seleccione el servicio que desea contratar (Valores Netos)</p>
+              </select>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="7000" id="lavadoExterior">
+                  <label class="form-check-label" for="lavadoExterior">
+                    Lavado Exterior $7.000.-
+                  </label>
+                </div>
+      
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="5000" id="lavadoMotor">
+                  <label class="form-check-label" for="lavadoMotor">
+                      Lavado Motor $5.000.-
+                  </label>
+                </div>
+                <br>
+                <div><button id="btnCalcular" type="button" class="btn btn-primary">Calcular</button>
+                </div>
+<br>
+<div class="row justify-content-center">
+  <div class="col-1">Neto</div>
+  <div id="neto" class="col-2">$</div>
+  <div class="col-1">IVA</div>
+  <div id="iva" class="col-2">$</div>
+  <div class="col-1">TOTAL</div>
+  <div id="total" class="col-2">$</div>
+</div>
+
+               <br>
                 <label for="validationServer04" class="form-label">Encargado del servicio</label>
                     <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback">
                         <option selected disabled value="">Seleccione un encargado</option>
@@ -109,7 +139,7 @@
                              </div>
            
                              <div class="col-md-3">
-                               <label for="dverificador" class="form-label">.</label>
+                               <label for="dverificador" class="form-label">dv</label>
                                <input type="text" class="form-control" id="dverificador" placeholder="0123456789/k">
                                <div id="feedback-dverificacion" class="valid-feedback">
                                </div>
@@ -161,23 +191,7 @@
                     </select>
                     <div class= "container-xs py-5">
                                <div class="col-md-6">
-                                <p>Seleccione el servicio que desea contratar (Valores Netos)</p>
-                               <div class="form-check">
-                                   <input type="radio" class="form-check-input" id="lexterior" name="radio-stacked" required>
-                                   <label class="form-check-label" for="validationFormCheck2">Lavado exterior - $7000</label>
-                                 </div>
-                               </div>
-                               <div class="form-check">
-                                   <input type="radio" class="form-check-input" id="linterior" name="radio-stacked" required>
-                                   <label class="form-check-label" for="validationFormCheck2">Lavado de motor - $5000</label>
-                               </div>
-                               <div class="form-check mb-3">
-                                   <input type="radio" class="form-check-input" id="lambos" name="radio-stacked" required>
-                                   <label class="form-check-label" for="validationFormCheck3">Lavado exterior y de motor - $12000</label>
-                                   <div class="invalid-feedback">More example invalid feedback text</div>
-                                 </div>
-                              
-                               <div class="col-md-6">
+                                  
                                  <label for="marca" class="form-label">Indique la Marca</label>
                                  <input type="text" class="form-control" id="marca" placeholder="Fiat - Lada - Mercedes">
                                  <div id="feedback-marca" class="valid-feedback">
